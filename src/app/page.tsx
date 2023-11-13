@@ -12,7 +12,12 @@ export default function Home() {
         height={400}
         priority
       />
-      <Link href={"/more"} className="text-blue-600 underline">Click Here to learn more</Link>
+      <Link href={"/more"} className="text-blue-600 underline">
+        Click Here to learn more
+      </Link>
+      <Link href={"/detailsform"} className="text-blue-600 underline">
+        Click Here to enter details
+      </Link>
     </main>
   );
 }
