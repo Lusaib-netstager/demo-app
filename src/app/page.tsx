@@ -18,6 +18,14 @@ export default function Home() {
       <Link href={"/detailsform"} className="text-blue-600 underline">
         Click Here to enter details
       </Link>
+      <div className="flex items-center justify-evenly w-[60%] mt-10">
+        <Link href={"/ssg-user"} className="text-blue-600 underline">
+          Static Site Generation
+        </Link>
+        <Link href={"/dsg-user"} className="text-blue-600 underline">
+          Dynamic Site Generation
+        </Link>
+      </div>
     </main>
   );
 }

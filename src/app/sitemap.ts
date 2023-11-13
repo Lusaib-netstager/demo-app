@@ -1,3 +1,5 @@
+"use server";
+
 import { MetadataRoute } from "next";
 
 type StoreUrls = {
