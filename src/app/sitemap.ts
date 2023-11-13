@@ -1,5 +1,4 @@
 import { MetadataRoute } from "next";
-import { parseString } from "xml2js";
 
 type StoreUrls = {
   id: number;
@@ -24,7 +23,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     throw new Error(`Failed to fetch sitemap. Status: ${result.status}`);
   }
 
-  const xmlObject: StoreUrls[] = (await result.json())?.urls;
+  const xmlObject: StoreUrls[] = (await result.json())?.urls || [];
   // Using xml2js to parse the XML string
   const parsedSitemap: MetadataRoute.Sitemap = (xmlObject || [])?.map((e) => ({
     url: e.store_url_analytics,
