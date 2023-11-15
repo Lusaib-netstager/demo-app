@@ -31,17 +31,17 @@ export default function SearchUser() {
   };
 
   return (
-    <form className="mt-10">
+    <form className=" w-[30%] fixed top-20 right-20">
       <TextField
         id="searchVal"
         name="searchVal"
         value={searchval}
-        placeholder="Enter search user id"
+        placeholder="Enter search user id seperated by comma"
         disableHelperText={false}
         helperText="This is a helper text"
         onChange={onInputChange}
       />
-      <PrimaryButton onClick={onSubmitClick}>Submit</PrimaryButton>
+      <PrimaryButton onClick={onSubmitClick}>Go</PrimaryButton>
     </form>
   );
 }

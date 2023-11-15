@@ -15,7 +15,7 @@ async function getUserInfo(id: number): Promise<User> {
 }
 
 /**
- * 
+ *
  */
 export default async function Page({
   params: { id },
@@ -31,6 +31,7 @@ export default async function Page({
         className="rounded-full w-20 h-20 mb-4"
         width={100}
         height={100}
+        priority
       />
       <h1 className="text-2xl font-bold">{user?.name}</h1>
       <p className="text-gray-500">{user?.email}</p>

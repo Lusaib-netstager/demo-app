@@ -28,6 +28,12 @@ export default function Home() {
         </Link>
       </div>
       <SearchUser />
+      <Link
+        href={`/user-info?name=lusaib&father=lathu`}
+        className="fixed top-20 left-20 text-blue-600 underline"
+      >
+        Developer Details
+      </Link>
     </main>
   );
 }
